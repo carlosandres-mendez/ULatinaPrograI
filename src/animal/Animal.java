@@ -32,7 +32,7 @@ public class Animal {
         this.posY = posY;
         this.direccionX = direccionX;
         this.direccionY = direccionY;
-//        this.velocidad = velocidad;
+        this.velocidad = velocidad;
     }
     
     /**
