@@ -5,7 +5,7 @@
  */
 package juego;
 
-/*Useless coment*/
+/*Useless comement*/
 import animal.Cola;
 import animal.Pato;
 import animal.Perro;
