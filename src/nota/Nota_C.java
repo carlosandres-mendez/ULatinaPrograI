@@ -2,6 +2,7 @@ package nota;
 
 
 public class Nota_C{ 
+    int variablePrueba;
   
     public void iniciar(){
      Nota objetoProgramaNota = new Nota(2);

@@ -15,10 +15,8 @@ public class Cola {
     public String color;
     public int tamCola;
     
-    public Cola(
-            
-            String pcolor,
-            int ptamCola){
+    /*Este es el metodo contructor */
+    public Cola(String pcolor, int ptamCola){
         
         this.color= pcolor; 
         this.tamCola= ptamCola;
