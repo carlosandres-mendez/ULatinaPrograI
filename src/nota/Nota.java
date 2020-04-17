@@ -5,6 +5,7 @@ public class Nota {
 
     double quiz[];
     int indice;
+    String ejemplo;
 
     public Nota(int cantidadDeEstudiantes) {
         quiz = new double[cantidadDeEstudiantes];
