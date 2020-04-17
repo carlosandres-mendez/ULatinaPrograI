@@ -4,6 +4,9 @@
 package animal;
 
 
+//Juan Gutierrez test 123
+
+
 /**
  *
  * @author 
@@ -12,6 +15,7 @@ public class Animal {
    
     //Atributo
     protected String color;
+    protected String nombreAnimal;
     protected String nombreArchivo;
     protected int posX;
     protected int posY;
@@ -24,8 +28,9 @@ public class Animal {
     public Animal() {
     }
     
-    public Animal (String color, int posX, int posY, int direccionX, int direccionY, int velocidad) {
+    public Animal (String color,String nombreanimal, int posX, int posY, int direccionX, int direccionY, int velocidad) {
         this.color = color;
+        this.nombreAnimal= nombreanimal;
         this.posX = posX;
         this.posY = posY;
         this.direccionX = direccionX;
@@ -39,6 +44,14 @@ public class Animal {
      */
     public void colisionar(boolean esPersona){
         System.out.println("Este animal colisiono");
+    }
+
+    public String getNombreAnimal() {
+        return nombreAnimal;
+    }
+
+    public void setNombreAnimal(String nombreAnimal) {
+        this.nombreAnimal = nombreAnimal;
     }
 
     public String getColor() {
