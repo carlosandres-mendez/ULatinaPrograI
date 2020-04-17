@@ -1,14 +1,12 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Esta clase es generica para todos los aniles
  */
 package animal;
 
 
 /**
  *
- * @author Laboratorio
+ * @author 
  */
 public class Animal {
    
@@ -20,6 +18,7 @@ public class Animal {
     protected int velocidad;  //cantidad de pasos que se mueve (cantidad de pixeles en panel)
     protected int direccionX;  
     protected int direccionY;
+    protected int numId;
   
     //Constructor
     public Animal() {
