@@ -1,5 +1,5 @@
 package nota;
-/*New comment*/
+
 import javax.swing.JOptionPane;
 import javax.swing.JTextArea;
 
