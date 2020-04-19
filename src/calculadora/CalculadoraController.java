@@ -15,8 +15,10 @@ package calculadora;
 public class CalculadoraController {
     
     public void iniciar(){
-        Calculadora c = new Calculadora(); //Se instancia la clase del modelo
-        CalculadoraView cv = new CalculadoraView(c); //Se instancia la clase de la Vista (ojo se pasa en el contructor el objeto de clase modelo)
+        
+        //Algo caracteristico del patron MVC es que en el controller instanciamos las clases del modelo y la clase de la vista
+        Calculadora calc = new Calculadora(); //Se instancia la clase del modelo. 
+        CalculadoraView cv = new CalculadoraView(calc); //Se instancia la clase de la Vista (MVC: se pasa al contructor el objeto de la clase modelo)
         
         boolean estado = false;
         do {
@@ -27,19 +29,19 @@ public class CalculadoraController {
                 String operacion = cv.solicitarOperacion(); //le decimos a la Vista que solicite la operacion y la retorne
                 switch (operacion) {
                     case "S":
-                        cv.mostrarResultado(c.suma());
+                        cv.mostrarResultado(calc.suma());
                         estado = false;
                         break;
                     case "R":
-                        cv.mostrarResultado(c.resta());
+                        cv.mostrarResultado(calc.resta());
                         estado = false;
                         break;
                     case "M":
-                        cv.mostrarResultado(c.multiplicacion());
+                        cv.mostrarResultado(calc.multiplicacion());
                         estado = false;
                         break;
                     case "D":
-                        cv.mostrarResultado(c.division());
+                        cv.mostrarResultado(calc.division());
                         estado = false;
                         break;
                     case "Q":

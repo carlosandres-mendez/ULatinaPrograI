@@ -33,7 +33,7 @@ public class Calculadora {
     
     
     
-    /* METODOS OPERACIONES DE LA CALCULADORA */    
+    //**** METODOS OPERACIONES DE LA CALCULADORA *****    
     public double suma(){
         return this.getNum1() + this.getNum2();
     }
@@ -57,7 +57,7 @@ public class Calculadora {
         return resultado;
     }
 
-    /* METODOS GETS y SETS GENERADOS AUTOMATICAMENTE */ 
+    //***** METODOS GETS y SETS GENERADOS AUTOMATICAMENTE ******
     public double getNum1() {
         return num1;
     }

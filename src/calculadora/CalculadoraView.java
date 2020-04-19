@@ -15,14 +15,21 @@ import javax.swing.JOptionPane;
  * entonces solo se necesita revisar esta clase.
  */
 public class CalculadoraView {
-    Calculadora calculadora;
+    Calculadora calculadora; //Observese que esta clase vista se compone de las clases del modelo
     
     public final static String ERROR_VACIO="Debe ingresar valores para los números";
     public final static String ERROR_NO_NUMERO="Debe ingresar únicamente números";
     
+    /**
+     * CONSTRUCTOR
+     * Este constructor es clave para el patron MVC. Se pasa como parametro una referencia de una clase del modelo
+     * @param c
+     */
     public CalculadoraView(Calculadora c){
-        this.calculadora=c;
+        this.calculadora=c; //esta linea es importante ya que asignamos el objeto que se instancio en la clase controladora
     }
+    
+    //*** METODOS PARA INTERACTUAR CON EL USUARIO ******
     
     public void solicitarPrimerNumero(){
         String numero = JOptionPane.showInputDialog("Ingrese un número");
