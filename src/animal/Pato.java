@@ -25,7 +25,7 @@ public class Pato extends Animal {
         this.direccionX=direccionX;
         this.direccionY=direccionY;
         this.velocidad =velocidad;
-        //this.tamaño =tamaño//
+        //this.tamano =tamano//
     }
     
     /**
