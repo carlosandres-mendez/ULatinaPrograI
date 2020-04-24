@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class Tester {
     public static void main (String a[]){
-        List<Empleado> listaEmpleados = new ArrayList<>();
+        BaseDatos bd = new BaseDatos();
         
         Empleado emp1 = new Empleado();
         emp1.setApellido("aaa");
@@ -22,9 +22,9 @@ public class Tester {
         emp1.setNumEmpleado(2);
         emp1.setNombre("ddd");
         
-        listaEmpleados.add(emp1);
+        bd.agregarEmpleado(emp1);
         
-        for(Empleado emp : listaEmpleados){
+        for(Empleado emp : bd.getListaEmpleados()){
             System.out.print(emp.getNombre()+" "+emp.getApellido());
           
         }  

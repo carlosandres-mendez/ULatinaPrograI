@@ -46,5 +46,5 @@ public class Empleado {
     public void setNumEmpleado(int numEmpleado) {
         this.numEmpleado = numEmpleado;
     }
-    
+ 
 }
